@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Гильдия Свободных Портных</title>
+</head>
+<!-- Sprites -->
+
+<!-- <svg style="display: none;">
+
+</svg> -->
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__top-container container">
+                    <div class="header__logo">
+                        <img src="/images/header/gildiya-logo.webp" alt="gildiya-logo">
+                    </div>
+                    <nav class="header__menu menu">
+                        <a class="menu__link" href="/start">старт</a>
+                        <a class="menu__link" href="/courses">курсы</a>
+                        <a class="menu__link" href="/help">
+                            <img class="menu__icon" src="/images/header/help.svg" alt="help">
+                            нужна помощь
+                        </a>
+                        <a class="menu__link" href="/profile">
+                            <img class="menu__icon" src="/images/header/profile.svg" alt="profile">
+                            личный кабинет
+                        </a>
+                    </nav>
+                    <div class="cart-link">
+                        <img src="/images/header/cart.svg" alt="cart">
+                    </div>
+                    <div class="burger" id="burger-button">
+                        <span>burger</span>
+                        <span>burger</span>
+                        <span>burger</span>
+                        <span>burger</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-container container">
+                    <div class="extra-menu">
+                        <a class="extra-menu__link" href="#">Программа</a>
+                        <a class="extra-menu__link" href="#">Гарантии</a>
+                        <a class="extra-menu__link" href="#">Отзывы</a>
+                        <a class="extra-menu__link" href="#">Поддрежка</a>
+                    </div>
+                    <nav class="burger-menu" id="burger-menu">
+                        <a class="burger-menu__link" href="/start">старт</a>
+                        <a class="burger-menu__link" href="/courses">курсы</a>
+                        <a class="burger-menu__link" href="/help">помощь</a>
+                        <a class="burger-menu__link" href="/help">профиль</a>
+                        <a class="burger-menu__link" href="/help">корзина</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="page">
+
+            <div class="page__intro intro">
+                <div class="intro__header">
+                    <div class="intro__header-container container">
+                        <!-- <div class="intro__header-body">
+                            <h1 class="intro__title">Гильдия Свободных Портных</h1>
+                            <div class="intro__subtitle">Годовой онлайн-курс от первых стежков до швейных произведений</div>
+                            <button class="btn">Начать обучение бесплатно</button>
+                        </div> -->
+                        <div class="intro__header-body section-header">
+                            <h2 class="section-header__title">Гильдия Свободных Портных</h2>
+                            <div class="section-header__subtitle">Годовой онлайн-курс от первых стежков до швейных произведений</div>
+                            <button class="btn">Начать обучение бесплатно</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__main">
+                    <div class="intro__main-image _ibj">
+                        <img src="/images/intro/background.webp" alt="background">
+                    </div>
+                    <div class="intro__main-container container">
+                        <div class="intro__main-body">
+                            <div class="intro__video">
+                                <!-- Заменить на видео или подтягивать при клике-->
+                                <img class="intro__img" src="https://via.placeholder.com/1055x593" alt="placeholder">
+                            </div>
+                            <form accept="/" class="intro__form sign-up">
+                                <input class="sign-up__name" type="text" placeholder="Введите ваше имя"></input>
+                                <input class="sign-up__email" type="email" placeholder="Введите ваш e-mail"></input>
+                                <button class="sign-up__btn btn" type="submit">Начать обучение бесплатно</button>
+                                <p class="sign-up__text">Обучение открыли  <span>50653</span> любителей шитья. Присоединяйтесь к Гильдии Свободных Портных!</p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="page__whom whom section">
+                <div class="whom__container container">
+                    <div class="whom__header section-header">
+                        <h2 class="section-header__title">Для кого создана Гильдия</h2>
+                    </div>
+                    <div class="whom__body">
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/01.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для начинающих<br>любителей шитья</div>
+                                    <div class="whom__text">Вдохновляйтесь превосходными<br>результатами с самого начала</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/02.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для дизайнеров</div>
+                                    <div class="whom__text">Воплощайте свои<br>авторские идеи в жизнь</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/03.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для работников ателье</div>
+                                    <div class="whom__text">Порадуйте заказчиков идеальной<br>посадкой с первой примерки</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/04.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для любителей рукоделия</div>
+                                    <div class="whom__text">Получайте максимальную пользу<br>от вашего хобби</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/05.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для тех, кто занимается<br>индивидуальным пошивом дома</div>
+                                    <div class="whom__text">Обеспечьте себя счастливыми<br>заказчиками на долгие годы</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__column">
+                            <div class="whom__item">
+                                <img class="whom__icon" src="/images/whom/06.svg" alt="">
+                                <div class="whom__info">
+                                    <div class="whom__title">Для перфекционистов</div>
+                                    <div class="whom__text">Узнайте ответы на все вопросы,<br>связанные с конструированием<br>швейных изделий</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+            
+            <div class="page__sign-up-btn sign-up-btn">
+                <div class="sign-up-btn__container container">
+                    <a class="btn" href="#">Начать обучение бесплатно</a>
+                </div>
+            </div>
+
+            <section class="page__program program section">
+                <div class="program__container container">
+                    <div class="program__header section-header">
+                        <h2 class="section-header__title">Как проходит обучение</h2>
+                    </div>
+                    <div class="program__body">
+                        <div class="program__item program__item--1">
+                            <img class="program__item-decor program__item-decor-start" src="/images/program/decor-start.svg" alt="decor"></img>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">старт</h4>
+                                <div class="header-program__text">Посвящение в Гильдию</div>
+                                <div class="header-program__title header-program__title_big">старт</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Бесплатный недельный марафон, на котором вы освоите все главные навыки свободного портного.</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">Познакомитесь со свойствами различных тканей и материалов, инструментами и техникой для шитья.</li>
+                                        <li class="info-program__item">Научитесь делать ручные и машинные швы, обрабатывать изделия оборками, бейками и вшивать молнии.</li>
+                                        <li class="info-program__item">Освоите искусство идеально ровных строчек.</li>
+                                    </ul>
+                                    <div class="info-program__text-bottom">
+                                        Это более удобный, понятный и эффективный вариант нашего «Пошагового обучения».
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__slider slider-program">
+                            <div class="slider-program__track">
+                                <div class="slider-program__left">left</div>
+                                <div class="slider-program__right">right</div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/01.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/02.webp" alt="Галина Балановская">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/03.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__item program__item--2">
+                            <img class="program__item-decor program__item-decor-1" src="/images/program/decor-1-snezhinka.svg" alt="decor"></img>
+                            <img class="program__item-decor program__item-decor-2" src="/images/program/decor-1-snezhinka-2.svg" alt="decor"></img>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 1</h4>
+                                <div class="header-program__text">Месяц 1</div>
+                                <div class="header-program__title header-program__title_big">Сезон 1</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Изучив первый из 12-ти месяцев нашего базового обучения вы узнаете, как:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">стартовать в шитье удачно;</li>
+                                        <li class="info-program__item">сшить приспособления для качественной влажно-тепловой обработки —<br>неотъемлемой части швейного процесса;</li>
+                                        <li class="info-program__item">развить глазомер и научиться рисовать одежду;</li>
+                                        <li class="info-program__item">отработать качество строчек;</li>
+                                        <li class="info-program__item">сшить постельное бельё и детское платье;</li>
+                                    </ul>
+                                    <div class="info-program__bottom-list">А ещё научитесь работать на различной швейной технике, шить простые юбки (-татьянки, -cолнце, -полусолнце, юбки с бантовыми и встречными складками) и моделировать их!</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 1</h4>
+                                <div class="header-program__text">Месяц 2</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Теперь пришло время шить прямые юбки! Во втором месяце обучения вы научитесь:
+                                    </div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">правильно снимать мерки с любой фигуры;</li>
+                                        <li class="info-program__item">строить чертёж прямой юбки для симметричных и несимметричных фигур;</li>
+                                        <li class="info-program__item">кроить и обрабатывать юбки разными способами;</li>
+                                        <li class="info-program__item">верно делать примерку и влажно-тепловую обработку.</li>
+                                    </ul>
+                                    <div class="info-program__bottom-list">Кроме того, вы узнаете, как работать с тканью, если у неё есть рисунок, а на примерах ошибок учеников не допустите своих собственных при пришивании молнии и пояса.</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 1</h4>
+                                <div class="header-program__text">Месяц 3</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">В третьем месяце обучения мы подготовили для вас уроки по основам моделирования на примере прямых юбок, которые вы уже умеете строить! Кроме того, некоторые фасоны юбок мы сошьём вместе от раскроя до готового изделия.</div>
+                                    <div class="info-program__subtitle">Но и это ещё не всё:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">вы узнаете, как быстро, просто и точно построить и помоделировать основы свободного силуэта без плечевого шва и с плечевым швом; </li>
+                                        <li class="info-program__item">и, конечно же, сможете сшить по этим основам самые разные изделия, благодаря подробным мастер-классам и урокам по обработке самих изделий или отдельных узлов.</li>
+                                    </ul>
+                                    <div class="info-program__text-bottom">Примеры моделей изделий,которые вы сможете cшить после изучения уроков 1 сезона</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__slider slider-program">
+                            <div class="slider-program__track">
+                                <div class="slider-program__left">left</div>
+                                <div class="slider-program__right">right</div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/01.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/02.webp" alt="Галина Балановская">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/03.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__item program__item--3">
+                            <img class="program__item-decor program__item-decor-1" src="/images/program/decor-2-green.svg" alt="decor"></img>
+                            <img class="program__item-decor program__item-decor-2" src="/images/program/decor-2-green-2.svg" alt="decor"></img>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 2</h4>
+                                <div class="header-program__text">Месяц 1</div>
+                                <div class="header-program__title header-program__title_big">Сезон 2</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">В этом месяце:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">вы продолжите изучать основу свободного силуэта;</li>
+                                        <li class="info-program__item">узнаете разные варианты обработки горловин и низа рукавов.</li>
+                                    </ul>
+                                    <div class="info-program__bottom-list">И, наверняка, вас порадует упрощённый вариант построения брюк из юбки.</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 2</h4>
+                                <div class="header-program__text">Месяц 2</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">На этом этапе мы переходим к изучению прямых и приталенных основ плечевых изделий без рукавов. Вы научитесь:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">правильно снимать мерки с фигуры;</li>
+                                        <li class="info-program__item">строить и моделировать изделия на любые фигуры;</li>
+                                        <li class="info-program__item">готовить изделие к примерке и проводить её;</li>
+                                        <li class="info-program__item">делать влажно-тепловую обработку;</li>
+                                        <li class="info-program__item">качественно, красиво обрабатывать изделия, следуя нашим подробным мастер-классам и урокам.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 2</h4>
+                                <div class="header-program__text">Месяц 3</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">В третьем месяце обучения мы подготовили для вас уроки по основам моделирования на примере прямых юбок, которые вы уже умеете строить! Кроме того, некоторые фасоны юбок мы сошьём вместе от раскроя до готового изделия.</div>
+                                    <div class="info-program__subtitle">Но и это ещё не всё:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">вы узнаете, как быстро, просто и точно построить и помоделировать основы свободного силуэта без плечевого шва и с плечевым швом; </li>
+                                        <li class="info-program__item">и, конечно же, сможете сшить по этим основам самые разные изделия, благодаря подробным мастер-классам и урокам по обработке самих изделий или отдельных узлов.</li>
+                                    </ul>
+                                    <div class="info-program__text-bottom">Примеры моделей изделий,которые вы сможете cшить после изучения уроков 2 сезона</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__slider slider-program">
+                            <div class="slider-program__track">
+                                <div class="slider-program__left">left</div>
+                                <div class="slider-program__right">right</div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/01.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/02.webp" alt="Галина Балановская">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/03.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__item program__item--4">
+                            <img class="program__item-decor program__item-decor-1" src="/images/program/decor-3-orange.svg" alt="decor"></img>
+                            <img class="program__item-decor program__item-decor-2" src="/images/program/decor-3-orange-2.svg" alt="decor"></img>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 3</h4>
+                                <div class="header-program__text">Месяц 1</div>
+                                <div class="header-program__title header-program__title_big">Сезон 3</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Поздравляем! Вы приступаете ко второй половине обучения и уже многое умеете!</div>
+                                    <div class="info-program__subtitle">Теперь пришло время узнать ещё больше:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">текущий месяц нашего обучения посвящён воротникам — их построению, моделированию и обработке изделий с воротниками;</li>
+                                        <li class="info-program__item">кроме того, в уроках вас ждёт информация по отрезным обтачкам, супатным застёжкам и моделированию некоторых изделий с воротниками!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 3</h4>
+                                <div class="header-program__text">Месяц 2</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">В этом месяце мы будем строить, моделировать и шить самые разные изделия на примере детской одежды.</div>
+                                    <div class="info-program__bottom-list">Эти мастер-классы и уроки непременно помогут вам в дальнейшем при пошиве не только детской одежды, но даже и взрослой.</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 3</h4>
+                                <div class="header-program__text">Месяц 3</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Теперь вы изучите построение основы свободного силуэта с нагрудной вытачкой и её моделирование.</div>
+                                    <div class="info-program__bottom-list info-program__bottom-list_padding">
+                                        Вам откроются новые способы перевода нагрудной вытачки и новые варианты моделирования. Вы узнаете, какие дефекты посадки исправить можно, а какие — нет.
+                                        <br>
+                                        <br>
+                                        А ещё поймёте, как определять выкройку-основу по фотографиям разных моделей.
+                                        </div>
+                                    <div class="info-program__text-bottom">Примеры моделей изделий,которые вы сможете cшить после изучения уроков 3 сезона</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__slider slider-program">
+                            <div class="slider-program__track">
+                                <div class="slider-program__left">left</div>
+                                <div class="slider-program__right">right</div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/01.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/02.webp" alt="Галина Балановская">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/03.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__item program__item--5">
+                            <img class="program__item-decor program__item-decor-1" src="/images/program/decor-4-orange.svg" alt="decor"></img>
+                            <img class="program__item-decor program__item-decor-2" src="/images/program/decor-4-orange-2.svg" alt="decor"></img>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 4</h4>
+                                <div class="header-program__text">Месяц 1</div>
+                                <div class="header-program__title header-program__title_big">Сезон 4</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Текущий месяц — брючный! Он научит вас:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">правильно снимать мерки для построения чертежа брюк;</li>
+                                        <li class="info-program__item">строить и моделировать самые разные фасоны брюк на любую фигуру;</li>
+                                        <li class="info-program__item">моделировать удобные комбинезоны;</li>
+                                        <li class="info-program__item">определять причины дефектов посадки и не допускать их;</li>
+                                        <li class="info-program__item">выполнять разные виды обработки деталей брюк;</li>
+                                        <li class="info-program__item">выполнять обработку брюк от раскроя до готового изделия.</li>
+                                    </ul>
+                                    <div class="info-program__bottom-list">Готовы сшить брюки, которые станут любимыми в вашем гардеробе?</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 4</h4>
+                                <div class="header-program__text">Месяц 2</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title">Этот месяц обучения будет посвящён работе с трикотажем:</div>
+                                    <ul class="info-program__list">
+                                        <li class="info-program__item">правильно снимать мерки для построения чертежа брюк;</li>
+                                        <li class="info-program__item">строить и моделировать самые разные фасоны брюк на любую фигуру;</li>
+                                        <li class="info-program__item">моделировать удобные комбинезоны;</li>
+                                        <li class="info-program__item">определять причины дефектов посадки и не допускать их;</li>
+                                        <li class="info-program__item">выполнять разные виды обработки деталей брюк;</li>
+                                        <li class="info-program__item">выполнять обработку брюк от раскроя до готового изделия.</li>
+                                    </ul>
+                                    <div class="info-program__bottom-list">А ещё в этом месяце вы сможете получить уникальные знания, которых нет нигде на просторах интернета — научитесь строить и моделировать любые капюшоны, так как поймёте принципы этих процессов!</div>
+                                    <div class="info-program__bottom-list"><span>Бонусом</span> станут подробные мастер-классы по моделированию и пошиву толстовки с защипами и спортивного костюма.</div>
+                                </div>
+                            </div>
+                            <div class="program__item-header header-program">
+                                <h4 class="header-program__title">Сезон 4</h4>
+                                <div class="header-program__text">Месяц 3</div>
+                            </div>
+                            <div class="program__info info-program">
+                                <div class="info-program__body">
+                                    <div class="info-program__title"></div>
+                                    <div class="info-program__bottom-list info-program__bottom-list_padding">
+                                        <span>Завершающий этап нашего базового обучения познакомит вас с более сложными изделиями<br></span>
+                                        — бомбером на подкладке и пальто-рубашкой, которые вы сможете помоделировать и сшить, благодаря поэтапным мастер-классам!
+                                        <br>
+                                        <br>
+                                        А ещё в качестве <span>бонуса</span> вы получите МК по моделированию и пошиву трикотажного брючного костюма.
+                                        </div>
+                                    <div class="info-program__text-bottom">Примеры моделей изделий,которые вы сможете cшить после изучения уроков 3 сезона</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="program__slider slider-program">
+                            <div class="slider-program__track">
+                                <div class="slider-program__left">left</div>
+                                <div class="slider-program__right">right</div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/01.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/02.webp" alt="Галина Балановская">
+                                    </div>
+                                </div>
+                                <div class="slider-program__column">
+                                    <div class="slider-program__item">
+                                        <img class="slider-program__img" src="/images/program/slider/slider-start/03.webp" alt="Швейная машинка">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__body">
+                    <div class="socials">
+                        <a href="#" class="socials__link">
+                            <img src="/images/socials/vk.svg" alt="vk">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img src="/images/socials/youtube.svg" alt="Гильдия Свободных Портных">
+                        </a>
+                        <a href="#" class="socials__link">
+                            <img src="/images/socials/instagram.svg" alt="Гильдия Свободных Портных">
+                        </a>
+                    </div>
+                    <div class="footer__support">
+                        <div class="footer__support-text">Служба поддержки:</div>
+                        <ul class="footer__list">
+                            <li class="footer__support-item">
+                                <a href="mailto:help@ucansew.ru" class="footer__link">help@ucansew.ru</a>
+                            </li>
+                            <li class="footer__support-item">
+                                <span>Россия</span><a class="footer__link footer__link_underline" href="tel:+78001018367">8-800-101-83-67</a>
+                            </li>
+                            <li class="footer__support-item">
+                                <span>Мир</span><a class="footer__link footer__link_underline" href="tel:+79283005012">+7-928-300-50-12</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright__container container">
+                    <div class="copyright__text">Все права защищены. &#169; Галина Балановская, 2022 г.</div>
+                    <div class="copyright__links">
+                        <a class="copyright__link" href="#">Публичная оферта</a>
+                        <a class="copyright__link" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
